@@ -10,19 +10,20 @@ const AboutMePage = () => {
     }
 
     return (
-        <Grid container justifyContent="center">
+        <Grid container justifyContent="center" >
+            <Grid item xs={10}>
             <Grid item xs={12} container justifyContent={"center"}>
                 <Typography variant="h3" sx={{ color: THEME.color.primary }}><b>ABOUT ME</b></Typography>
             </Grid>
-            <Grid container direction="row" spacing={{ sm: 1, md: 2, lg: 5 }} alignItems="center">
-                <Grid item xs={12} sm={4} md={4}>
+            <Grid container direction="row" spacing={2} alignItems="center">
+                <Grid item xs={4}>
                     <Card elevation={0} sx={{ backgroundColor: THEME.color.secondary, color: THEME.color.quaternary }}>
                         <Grid item xs>
                             <CardContent>
-                                <Paper elevation={0} sx={{ backgroundColor: THEME.color.quaternary, color: THEME.color.primary, p: 1 }}>
+                                {/* <Paper elevation={0} sx={{ backgroundColor: THEME.color.quaternary, color: THEME.color.primary}}> */}
                                     <Grid container direction="column">
                                         <Grid item xs={12}>
-                                            <Typography >
+                                            <Typography variant="caption" sx={{fontSize: '1.5rem'}}>
                                                 My name is Audrey Kobayashi. I graduated from Cal State, Long Beach in December 2019 with a B.S. in Computer Science.
                                                 Currently, I work at The Aerospace Corporation as a Web Developer,
                                                 but in my free time I enjoy drawing, playing games, and spending time with friends and family.
@@ -36,13 +37,13 @@ const AboutMePage = () => {
                                             />
                                         </Grid>
                                     </Grid>
-                                </Paper>
+                                {/* </Paper> */}
                             </CardContent>
                         </Grid>
                     </Card>
                 </Grid>
 
-                <Grid item xs={12} sm={8}>
+                <Grid item xs={8}>
                     <Card elevation={0} sx={{ backgroundColor: THEME.color.tertiary }}>
                         <CardHeader
                             sx={{ backgroundColor: THEME.color.primary, color: THEME.color.quaternary }}
@@ -92,7 +93,7 @@ const AboutMePage = () => {
                     <Card elevation={0} sx={{ backgroundColor: THEME.color.tertiary, marginBottom: 2 }}>
                         <CardContent>
                             <Grid container direction="row" spacing={2}>
-                                <Grid item xs={10} container alignItems="center">
+                                <Grid item xs={6} container alignItems="center">
                                     <Box
                                         sx={{ backgroundColor: THEME.color.primary, borderRadius: 2, p: 1 }}
                                     >
@@ -142,6 +143,7 @@ const AboutMePage = () => {
                     </Card>
                 </Grid >
             </Grid >
+            </Grid>
         </Grid >
     )
 }

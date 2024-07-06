@@ -4,24 +4,24 @@ import './App.css';
 import Routes from './Routes';
 
 const THEME = createTheme({
-  // color: {
-  //   primary: "#33425B",
-  //   secondary: "#38817A",
-  //   tertiary: "#87DFD6",
-  //   quaternary: "#F9F8EB"
-  // },
+  color: {
+    primary: "#33425B",
+    secondary: "#38817A",
+    tertiary: "#87DFD6",
+    quaternary: "#F9F8EB"
+  },
   // color: {
   //   primary: "#937DC2",
   //   secondary: "#C689C6",
   //   tertiary: "#FFABE1",
   //   quaternary: "#FFE6F7"
   // },
-  color: {
-    primary: "#5B305A",
-    secondary: "#E04B5A",
-    tertiary: "#9A4C68",
-    quaternary: "#FFEEEE"
-  },
+  // color: {
+  //   primary: "#5B305A",
+  //   secondary: "#E04B5A",
+  //   tertiary: "#9A4C68",
+  //   quaternary: "#FFEEEE"
+  // },
   breakpoints: {
     values: {
       xs: 0,
